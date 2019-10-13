@@ -1,0 +1,40 @@
+							   Jogo de RPG Sem nome ainda
+
+Estrutura de mundo em regras básicas
+
+Força em Newtons
+Unidades de Massa = Tonelada, Kg, Grama, Miligrama,
+Unidade de Medida = Km, Metro, Centímetro, Milímetro, Celsius
+
+Contantes universais    
+	ENERGIA - E=m.ac2 (Energia é igual a massa vezes aceleração ao quadrado)
+	FORÇA   - Fr=m.a  (A soma das forças é igual a massa vezes aceleração)
+	PESO	- P=m.g   (Peso é igual a massa vezes a gravidade)
+	
+Variáveis de Ambiente
+	Gravidade
+	Tempo
+	Entropia
+
+Criação de Personagem
+
+	Genôma (Usado para calcular o fenótipo de personagens filhos de PJ's "personagem do jogador" )
+
+		Genótipo =  (46 fitas de DNA , 46 Cromossomos: 23 herdados da mãe e 23 herdados do Pai)   
+		Fator Ambiente = Tiragem de entropia define o nível influência no sequênciamento genético
+		Fenótipo = Genótipo + F.Ambiente (Ao criar o personagem o jogador escolhe o fenótipo que quiser)
+
+		
+	Definição métrica
+
+		Altura 
+		Peso
+
+	
+	Cálculo de deslocamento
+		Caminhada
+		Corrida
+		Movimento Padrão de Ação (MPA)
+
+
+	Cálculo de pontuação de força
