@@ -51,11 +51,29 @@ Criação de Personagem
 
 		
 	Definição métrica
-
 		Altura
-		Braço: Tem proporção de 10 sobre 1 Altura do personagem. ( Se sua altura for 
+		
+		O perímetro do peito deve ser igual ao perímetro do punho multiplicado por 6.5.
+		O perímetro do quadril deve ser igual a 85% do perímetro do peito.
+		A cintura deve ser igual a 70% do perímetro do peito.
+		A coxa deve ter um perímetro igual a 53% do peito.
+		O pescoço deve ter um perímetro igual a 37% do perímetro do peito.
+		Os bíceps devem ter um perímetro próximo a 36% do perímetro do peito.
+		A canela deve ter 34% do perímetro do peito.
+		O perímetro do antebraço deve ser igual a 29% do perímetro do peito.
+		Claro que estes valores são apenas indicativos e devem ser arredondados e analisados com respeito ao tipo de corpo,
+		idade e outras variáveis.
+		
+		Braço: Tem proporção de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
+		o tamanho do seu braço será obtido dividindo sua altura por 2.1. (1.80/2.1=85cm)
+		
 		Perna
-		Massa
+		Massa = Densidade do corpo humano 1.010 kg/m³ 
+		Peso = Altura x densidade = 1.80 x 1.010
+		Para obter a massa de um corpo deve-se os membros a cilindros, o qual possui 
+		volume V = PI * R ² * L 
+		onde PI = 3,14;
+		R é o raio do membro e L é o comprimento. 
 
 	
 	Cálculo de deslocamento
