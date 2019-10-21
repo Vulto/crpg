@@ -52,8 +52,10 @@ Criação de Personagem
 		
 	Definição métrica
 
-		Altura 
-		Peso
+		Altura
+		Braço: Tem proporção de 10 sobre 1 Altura do personagem. ( Se sua altura for 
+		Perna
+		Massa
 
 	
 	Cálculo de deslocamento
@@ -63,3 +65,13 @@ Criação de Personagem
 
 
 	Cálculo de pontuação de força
+	
+	
+	Classes: 
+	Hipertrofia
+	Forte
+	Atlético
+	Padrão
+	Atrofia
+	
+	
