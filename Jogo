@@ -10,14 +10,15 @@ Estrutura de mundo em regras básicas
 Unidades de Medida
 Força em Newtons
 Massa = Tonelada, Kg, Grama, Miligrama,
-Distância = Km, Metro, Centímetro, Milímetro, Celsius
+Distância = Km, Metro, Centímetro, Milímetro
+temperatura = Celsius
 Gravidade = 9.80665 m/s² (Pode ser arredondado para 10 caso haja necessidade de facilitação em cálculos manuais)
 Luz = Velocidade da luz no vácuo, em várias unidades
 metros por segundo (m/s)	299 792 458
 quilômetros por segundo (km/s)	299 792,458
 quilômetros por hora (km/h)	1 079 252 848,8
-Unidades Astronômicas por dia	173,1446
-Unidades Naturais (ou unidades de Planck)	1
+Unidades Astro por dia (UA)	173,1446
+
 Tempo aproximado para a luz percorrer:
 1 metro	3,3 nanossegundos
 1 quilômetro	3,3 microssegundos
@@ -53,6 +54,8 @@ Criação de Personagem
 	Definição métrica
 		Altura
 		
+		Definições métricas de personagem porte Atlético:
+		
 		O perímetro do peito deve ser igual ao perímetro do punho multiplicado por 6.5.
 		O perímetro do quadril deve ser igual a 85% do perímetro do peito.
 		A cintura deve ser igual a 70% do perímetro do peito.
@@ -61,8 +64,9 @@ Criação de Personagem
 		Os bíceps devem ter um perímetro próximo a 36% do perímetro do peito.
 		A canela deve ter 34% do perímetro do peito.
 		O perímetro do antebraço deve ser igual a 29% do perímetro do peito.
-		Claro que estes valores são apenas indicativos e devem ser arredondados e analisados com respeito ao tipo de corpo,
-		idade e outras variáveis.
+		
+		(Claro que estes valores são apenas indicativos e devem ser arredondados e analisados
+		com respeito ao tipo de corpo,idade e outras variáveis.)
 		
 		Braço: Tem proporção de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
 		o tamanho do seu braço será obtido dividindo sua altura por 2.1. (1.80/2.1=85cm)
@@ -70,10 +74,11 @@ Criação de Personagem
 		Perna
 		Massa = Densidade do corpo humano 1.010 kg/m³ 
 		Peso = Altura x densidade = 1.80 x 1.010
-		Para obter a massa de um corpo deve-se os membros a cilindros, o qual possui 
-		volume V = PI * R ² * L 
-		onde PI = 3,14;
-		R é o raio do membro e L é o comprimento. 
+		Para obter a massa de um corpo deve-se assimilar os membros a cilindros, o qual possui 
+		volume V = π*R²*L 
+		π = 3,14...
+		R é o raio do membro
+		L é o comprimento. 
 
 	
 	Cálculo de deslocamento
