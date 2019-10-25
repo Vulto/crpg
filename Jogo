@@ -1,5 +1,6 @@
 							   Jogo de RPG Sem nome ainda
 Índice
+0  ................................................................................. Estrutura de mundo em regras básicas
 1  ................................................................................. Criação de Personagem
 2  ................................................................................. Classes
 3  ................................................................................. Mundo natural
@@ -13,12 +14,17 @@ Massa = Tonelada, Kg, Grama, Miligrama,
 Distância = Km, Metro, Centímetro, Milímetro
 temperatura = Celsius
 Gravidade = 9.80665 m/s² (Pode ser arredondado para 10 caso haja necessidade de facilitação em cálculos manuais)
+Densidade do corpo humano 1.010 kg/m³
+
+
+
+
+
 Luz = Velocidade da luz no vácuo, em várias unidades
 metros por segundo (m/s)	299 792 458
 quilômetros por segundo (km/s)	299 792,458
 quilômetros por hora (km/h)	1 079 252 848,8
 Unidades Astro por dia (UA)	173,1446
-
 Tempo aproximado para a luz percorrer:
 1 metro	3,3 nanossegundos
 1 quilômetro	3,3 microssegundos
@@ -32,7 +38,7 @@ Da estrela Alfa Centauro à Terra	4,4 anos
 Atravessar a Via-Láctea	100 000 anos
 Da Galáxia de Andrômeda à Terra	2 500 000 anos
 
-Contantes universais    
+Contantes Universais    
 	ENERGIA - E=m.ac2 (Energia é igual a massa vezes aceleração ao quadrado)
 	FORÇA   - Fr=m.a  (A força resultante é igual a massa vezes aceleração)
 	PESO	- P=m.g   (Peso é igual a massa vezes a gravidade)
@@ -53,6 +59,18 @@ Criação de Personagem
 		
 	Definição métrica
 		Altura
+		Método impreciso para obter a massa de um corpo
+		Assemelhar os membros a cilindros, o qual possui 
+		volume V = π*R²*L 
+		π = 3,14...
+		R é o raio do membro
+		L é o comprimento. 
+
+		Peso = atração gravitacional da Terra
+		que é 0,17 em uma escala onde a gravidade da Terra é 1, a do Sol é 27,07 e o espaço profundo é quase 0.
+
+Passo 3
+Anote o seu novo peso. Por exemplo, uma pessoa de 80 kg pesaria 13 kg na Lua.
 		
 		Definições métricas de personagem porte Atlético:
 		
@@ -68,18 +86,12 @@ Criação de Personagem
 		(Claro que estes valores são apenas indicativos e devem ser arredondados e analisados
 		com respeito ao tipo de corpo,idade e outras variáveis.)
 		
-		Braço: Tem proporção de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
+		Braço: Tem comprimento de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
 		o tamanho do seu braço será obtido dividindo sua altura por 2.1. (1.80/2.1=85cm)
 		
 		Perna
-		Massa = Densidade do corpo humano 1.010 kg/m³ 
-		Peso = Altura x densidade = 1.80 x 1.010
-		Para obter a massa de um corpo deve-se assimilar os membros a cilindros, o qual possui 
-		volume V = π*R²*L 
-		π = 3,14...
-		R é o raio do membro
-		L é o comprimento. 
-
+		
+		
 	
 	Cálculo de deslocamento
 		Caminhada
