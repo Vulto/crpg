@@ -1,112 +1,138 @@
-							   Jogo de RPG Sem nome ainda
-Índice
+
+						Cientific RRPG (CRRPG)
+ 
+ 
+ Índice
+  
 0  ................................................................................. Estrutura de mundo em regras básicas
+										     Unidades de Medida
+										     Constantes Universais
+										     Variáveis de Ambiente
 1  ................................................................................. Criação de Personagem
 2  ................................................................................. Classes
 3  ................................................................................. Mundo natural
 3  ................................................................................. Deslocamento
 4  ................................................................................. Combate
+
 Estrutura de mundo em regras básicas
 
-Unidades de Medida
-Força em Newtons
-Massa = Tonelada, Kg, Grama, Miligrama,
-Distância = Km, Metro, Centímetro, Milímetro
-temperatura = Celsius
-Gravidade = 9.80665 m/s² (Pode ser arredondado para 10 caso haja necessidade de facilitação em cálculos manuais)
-Densidade do corpo humano 1.010 kg/m³
+  Unidades de Medida
+    Força em Newtons
+    Massa = Tonelada, Kg, Grama, Miligrama,
+    Distância = Km, Metro, Centímetro, Milímetro
+    Temperatura = Celsius
+        
+    Densidade
+    	Agua doce 1
+	Agua do mar 1,025
+	No mar, ele sofre-se uma impulsão maior do que quando está numa piscina. 
+	A força de impulsão é proporcional ao volume do corpo imerso e à densidade relativa do corpo.
+	Cada Objeto possui uma densidade relativa diferente. 
+	Uma pessoa com mais densidade de massa gorda pode flutuar mais facilmente. 
+	Isso acontece por que a densidade relativa da massa gorda é menor do que a densidade relativa da massa muscular.
+	A densidade relativa da massa muscular é 1,0. 
+	A densidade relativa dos ossos é 1,5. 
+	A densidade relativa da gordura corporal é 0,8. 
+	Esses números levam a uma gravidade específica média do corpo humano de aproximadamente 0,97. 
+	Como este valor é inferior à densidade relativa da água, o corpo humano com mais gordura consegue flutuar mais 
+	facilmente.	
+	
+    Tempo= Anos, Mêses, Dias, Horas, Minutos, Segundos, Nanossegundos, Microssegundos
 
+    Luz = Velocidade da luz no vácuo, em várias unidades
+	metros por segundo (m/s)	299 792 458
+	Kilômetros por segundo (km/s)	299 792,458
+	Kilômetros por hora (km/h)	1 079 252 848,8
+	Unidades Astro por dia (UA)	173,1446
 
+  Tempo aproximado para a luz percorrer:
+	1 metro 					3,3 nanossegundos
+	1 quilômetro					3,3 microssegundos
+	De uma órbita geoestacionária até à Terra	0,12 segundos
+	O perímetro da Terra (Equador)			0,13 segundos
+	Da Terra à Lua					1,25 segundos
+	Do Sol à Terra					8,3 minutos
+	1 ano-luz					1 ano (por definição)
+	1 parsec					3,26 anos
+	Da estrela Alfa Centauro à Terra		4,4 anos
+	Atravessar a Via-Láctea				100 000 anos
+	Da Galáxia de Andrômeda à Terra			2 500 000 anos
 
-
-
-Luz = Velocidade da luz no vácuo, em várias unidades
-metros por segundo (m/s)	299 792 458
-quilômetros por segundo (km/s)	299 792,458
-quilômetros por hora (km/h)	1 079 252 848,8
-Unidades Astro por dia (UA)	173,1446
-Tempo aproximado para a luz percorrer:
-1 metro	3,3 nanossegundos
-1 quilômetro	3,3 microssegundos
-De uma órbita geoestacionária até à Terra	0,12 segundos
-O perímetro da Terra (Equador)	0,13 segundos
-Da Terra à Lua	1,25 segundos
-Do Sol à Terra	8,3 minutos
-1 ano-luz	1 ano (por definição)
-1 parsec	3,26 anos
-Da estrela Alfa Centauro à Terra	4,4 anos
-Atravessar a Via-Láctea	100 000 anos
-Da Galáxia de Andrômeda à Terra	2 500 000 anos
-
-Contantes Universais    
+  Contantes Universais    
 	ENERGIA - E=m.ac2 (Energia é igual a massa vezes aceleração ao quadrado)
 	FORÇA   - Fr=m.a  (A força resultante é igual a massa vezes aceleração)
 	PESO	- P=m.g   (Peso é igual a massa vezes a gravidade)
 	
-Variáveis de Ambiente
-	Gravidade
-	Tempo
-	Entropia
+	
+  Variáveis de Ambiente
+	Gravidade = 9.80665 m/s² (Pode ser arredondado para 10 caso haja necessidade de facilitação de cálculos)
+	Tempo = Padrão 
+	Entropia = Probabilidade de erro como adicional de dificuldade. Classe de dificuldade para rolagem de dados.
 
-Criação de Personagem
 
+
+  Criação de Personagem
+  
+  A criação do personagem é a parte central e que usa todos os parâmetros do mundo descrito neste livro.
+  
+  	Para criar um personagem é preciso definir os seguintes Atributos Físicos:
+  	
+	Altura
+	Peso
+	Descrição estética (Cor e tipo de cabelo, cor de pele) Fenótipo
+	Nome e Sobrenome
+	Região de origem
+	Região de residência (Ou pode-se atribuir como nômade)
+		
 	Genôma (Usado para calcular o fenótipo de personagens filhos de PJ's "personagem do jogador" )
+	Genótipo =  (46 fitas de DNA , 46 Cromossomos: 23 herdados da mãe e 23 herdados do Pai)   
+	Fator Ambiente = Rolagem de entropia define o nível influência no sequênciamento genético
+	Fenótipo = Genótipo + F.Ambiente (Ao criar o personagem o jogador escolhe o fenótipo que quiser)
+	
+	Definição métrica:
+	As definições métricas a seguir serão usados por um algoritmo para calcular a densidade de um corpo
+	
+	Altura
+	Método impreciso para obter a massa de um corpo é assemelhar os membros a cilindros, o qual possui 
+	volume V = π*R²*L
+	π = 3,14...
+	R é o raio do membro
+	L é o comprimento. 
 
-		Genótipo =  (46 fitas de DNA , 46 Cromossomos: 23 herdados da mãe e 23 herdados do Pai)   
-		Fator Ambiente = Tiragem de entropia define o nível influência no sequênciamento genético
-		Fenótipo = Genótipo + F.Ambiente (Ao criar o personagem o jogador escolhe o fenótipo que quiser)
-
+	Peso = atração gravitacional da Terra
+	Em uma escala onde a gravidade da Terra é 1, a do Sol é 27,07 e o espaço profundo é quase 0.
+	Por exemplo, uma pessoa de 80 kg pesaria 13 kg na Lua.
 		
-	Definição métrica
-		Altura
-		Método impreciso para obter a massa de um corpo
-		Assemelhar os membros a cilindros, o qual possui 
-		volume V = π*R²*L 
-		π = 3,14...
-		R é o raio do membro
-		L é o comprimento. 
-
-		Peso = atração gravitacional da Terra
-		que é 0,17 em uma escala onde a gravidade da Terra é 1, a do Sol é 27,07 e o espaço profundo é quase 0.
-
-Passo 3
-Anote o seu novo peso. Por exemplo, uma pessoa de 80 kg pesaria 13 kg na Lua.
+	Definições métricas de personagem porte "Atlético":
+	
+	O perímetro do peito deve ser igual ao perímetro do punho multiplicado por 6.5.
+	O perímetro do quadril deve ser igual a 85% do perímetro do peito.
+	A cintura deve ser igual a 70% do perímetro do peito.
+	A coxa deve ter um perímetro igual a 53% do peito.
+	O pescoço deve ter um perímetro igual a 37% do perímetro do peito.
+	Os bíceps devem ter um perímetro próximo a 36% do perímetro do peito.
+	A canela deve ter 34% do perímetro do peito.
+	O perímetro do antebraço deve ser igual a 29% do perímetro do peito.
+	
+	(Claro que estes valores são apenas indicativos e devem ser arredondados e analisados
+	com respeito ao tipo de corpo,idade e outras variáveis.)
 		
-		Definições métricas de personagem porte Atlético:
+	Braço: Tem comprimento de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
+	o tamanho do seu braço será obtido dividindo sua altura por 2.1. (1.80/2.1=85cm)
 		
-		O perímetro do peito deve ser igual ao perímetro do punho multiplicado por 6.5.
-		O perímetro do quadril deve ser igual a 85% do perímetro do peito.
-		A cintura deve ser igual a 70% do perímetro do peito.
-		A coxa deve ter um perímetro igual a 53% do peito.
-		O pescoço deve ter um perímetro igual a 37% do perímetro do peito.
-		Os bíceps devem ter um perímetro próximo a 36% do perímetro do peito.
-		A canela deve ter 34% do perímetro do peito.
-		O perímetro do antebraço deve ser igual a 29% do perímetro do peito.
-		
-		(Claro que estes valores são apenas indicativos e devem ser arredondados e analisados
-		com respeito ao tipo de corpo,idade e outras variáveis.)
-		
-		Braço: Tem comprimento de metade + 0.1 da altura do personagem. ( Se sua altura for 1.80m, 
-		o tamanho do seu braço será obtido dividindo sua altura por 2.1. (1.80/2.1=85cm)
-		
-		Perna
-		
+	Perna
 		
 	
-	Cálculo de deslocamento
-		Caminhada
-		Corrida
-		Movimento Padrão de Ação (MPA)
+  Cálculo de deslocamento
+	Caminhada
+	Corrida
+	Movimento Padrão de Ação (MPA)
 
-
-	Cálculo de pontuação de força
-	
-	
-	Classes: 
+  Porte de Biotipo
 	Hipertrofia
 	Forte
 	Atlético
 	Padrão
 	Atrofia
-	
-	
+  
+  Cálculo de pontuação de força	
