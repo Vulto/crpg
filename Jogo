@@ -20,12 +20,7 @@
 2  ................................................................................. Mundo natural
 3  ................................................................................. 
 4  ................................................................................. Combate
-5  ................................................................................. 
-6  ................................................................................. Morte
-7  ................................................................................. 
-8  ................................................................................. 
-9  ................................................................................. 
-10 ................................................................................. XP
+5  ................................................................................. XP
 
 Estrutura de mundo em regras básicas
 
@@ -89,6 +84,7 @@ Estrutura de mundo em regras básicas
   	Para criar um personagem é preciso definir os seguintes Atributos Físicos:
   	
 	Altura
+	
 	Peso
 	Descrição estética (Cor e tipo de cabelo, cor de pele) Fenótipo
 	Nome e Sobrenome
@@ -113,7 +109,14 @@ Estrutura de mundo em regras básicas
 	Peso = atração gravitacional da Terra
 	Em uma escala onde a gravidade da Terra é 1, a do Sol é 27,07 e o espaço profundo é quase 0.
 	Por exemplo, uma pessoa de 80 kg pesaria 13 kg na Lua.
-		
+	
+	Porte de Biotipo
+	Hipertrofia
+	Forte
+	Atlético
+	Padrão
+	Atrofia	
+	
 	Definições métricas de personagem porte "Atlético":
 	
 	O perímetro do peito deve ser igual ao perímetro do punho multiplicado por 6.5.
@@ -139,11 +142,6 @@ Estrutura de mundo em regras básicas
 	Corrida
 	Movimento Padrão de Ação (MPA)
 
-  Porte de Biotipo
-	Hipertrofia
-	Forte
-	Atlético
-	Padrão
-	Atrofia
+ 
   
   Cálculo de pontuação de força	
