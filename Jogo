@@ -1,5 +1,5 @@
 
-						Cientific RRPG (CRRPG)
+						Cientific RPG
  
  
  Índice
@@ -8,11 +8,24 @@
 										     Unidades de Medida
 										     Constantes Universais
 										     Variáveis de Ambiente
+
 1  ................................................................................. Criação de Personagem
-2  ................................................................................. Classes
-3  ................................................................................. Mundo natural
-3  ................................................................................. Deslocamento
+                                                                                     Classes
+										     Deslocamento
+										     Dano
+										     Doenças
+										     Recuperação
+										     Envelhecimento
+
+2  ................................................................................. Mundo natural
+3  ................................................................................. 
 4  ................................................................................. Combate
+5  ................................................................................. 
+6  ................................................................................. Morte
+7  ................................................................................. 
+8  ................................................................................. 
+9  ................................................................................. 
+10 ................................................................................. XP
 
 Estrutura de mundo em regras básicas
 
@@ -25,7 +38,6 @@ Estrutura de mundo em regras básicas
     Densidade
     	Agua doce 1
 	Agua do mar 1,025
-	No mar, ele sofre-se uma impulsão maior do que quando está numa piscina. 
 	A força de impulsão é proporcional ao volume do corpo imerso e à densidade relativa do corpo.
 	Cada Objeto possui uma densidade relativa diferente. 
 	Uma pessoa com mais densidade de massa gorda pode flutuar mais facilmente. 
@@ -66,9 +78,8 @@ Estrutura de mundo em regras básicas
 	
   Variáveis de Ambiente
 	Gravidade = 9.80665 m/s² (Pode ser arredondado para 10 caso haja necessidade de facilitação de cálculos)
-	Tempo = Padrão 
+	Tempo 
 	Entropia = Probabilidade de erro como adicional de dificuldade. Classe de dificuldade para rolagem de dados.
-
 
 
   Criação de Personagem
