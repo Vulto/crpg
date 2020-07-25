@@ -83,19 +83,17 @@ Estrutura de mundo em regras básicas
   
   	Para criar um personagem é preciso definir os seguintes Atributos Físicos:
   	
-	Altura
-	
+	Genôma (Usado para calcular o fenótipo de personagens filhos de PJ's "personagem do jogador" )
+	Genótipo =  (46 fitas de DNA , 46 Cromossomos: 23 herdados da mãe e 23 herdados do Pai)   
+	Fator Ambiente = Rolagem de entropia define o nível influência no sequênciamento genético
+	Fenótipo = Genótipo + F.Ambiente (Ao criar o personagem o jogador escolhe o fenótipo que quiser)
+		
 	Peso
 	Descrição estética (Cor e tipo de cabelo, cor de pele) Fenótipo
 	Nome e Sobrenome
 	Região de origem
 	Região de residência (Ou pode-se atribuir como nômade)
 		
-	Genôma (Usado para calcular o fenótipo de personagens filhos de PJ's "personagem do jogador" )
-	Genótipo =  (46 fitas de DNA , 46 Cromossomos: 23 herdados da mãe e 23 herdados do Pai)   
-	Fator Ambiente = Rolagem de entropia define o nível influência no sequênciamento genético
-	Fenótipo = Genótipo + F.Ambiente (Ao criar o personagem o jogador escolhe o fenótipo que quiser)
-	
 	Definição métrica:
 	As definições métricas a seguir serão usados por um algoritmo para calcular a densidade de um corpo
 	
@@ -110,11 +108,13 @@ Estrutura de mundo em regras básicas
 	Em uma escala onde a gravidade da Terra é 1, a do Sol é 27,07 e o espaço profundo é quase 0.
 	Por exemplo, uma pessoa de 80 kg pesaria 13 kg na Lua.
 	
-	Porte de Biotipo
+	
+	Biotipo de Musculatura
+	
 	Hipertrofia
 	Forte
 	Atlético
-	Padrão
+	Sedentario
 	Atrofia	
 	
 	Definições métricas de personagem porte "Atlético":
